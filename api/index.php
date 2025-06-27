@@ -91,16 +91,18 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
 
 
         <!-- Giveaway Button Section -->
-        <section class="giveaway-section">
-            <div class="container">
-                <a href="https://bit.ly/gachallengegame"
-                    class="giveaway-btn"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Give Away Form
-                </a>
-            </div>
-        </section>
+        <a href="https://bit.ly/gachallengegame"
+            class="giveaway-btn"
+            target="_blank"
+            rel="noopener noreferrer">
+            <span class="btn-icon-img">
+                <img src="assets/images/giveaway-icon.png" alt="Giveaway Icon">
+            </span>
+            <span class="btn-text">Give Away Form</span>
+            <span class="btn-arrow">→</span>
+        </a>
+
+
 
 
 
