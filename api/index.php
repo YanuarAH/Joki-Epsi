@@ -95,7 +95,7 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
             <div class="container">
                 <div class="giveaway-banner">
                     <div class="giveaway-content">
-                        <div class="giveaway-label">GIVEAWAY</div>
+                        <!-- <div class="giveaway-label">GIVEAWAY</div> -->
 
                         <!-- <div class="giveaway-text">
                             <h3 class="giveaway-title">Ikuti Giveaway Kami</h3>
