@@ -1726,44 +1726,51 @@ body {
 
 
 
-
 .modal {
   display: none;
   position: fixed;
-  z-index: 99;
-  left: 0;
+  z-index: 9999; /* sangat tinggi agar di atas semua konten */
   top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
   position: relative;
-  margin: 5% auto;
-  max-width: 90%;
-  max-height: 80%;
-  background: #fff;
-  padding: 1rem;
+  background-color: #fff;
   border-radius: 12px;
-  text-align: center;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 0.75rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  overflow: auto;
 }
 
 .modal-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
+  display: block;
 }
 
 .close {
   position: absolute;
-  top: 0.5rem;
-  right: 1rem;
+  top: 8px;
+  right: 16px;
   font-size: 2rem;
   font-weight: bold;
-  color: #000;
+  color: #333;
   cursor: pointer;
+  z-index: 10000;
 }
+.modal.show {
+  display: flex; /* show with center align using flexbox */
+}
+
 
 .btn-detail {
   background: rgba(255, 255, 255, 0.15); /* semi transparan */

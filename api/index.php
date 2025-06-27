@@ -140,25 +140,23 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
     </main>
 
     <?php include dirname(__DIR__) . '/includes/footer.php'; ?>
-    <script src="assets/js/script.js"></script>
-
-    <!-- Modal Logic -->
     <script>
-    function openModal() {
-        document.getElementById("imageModal").style.display = "block";
-    }
-
-    function closeModal() {
-        document.getElementById("imageModal").style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        const modal = document.getElementById("imageModal");
-        if (event.target === modal) {
-            modal.style.display = "none";
+        function openModal() {
+            document.getElementById("imageModal").classList.add("show");
         }
-    }
+
+        function closeModal() {
+            document.getElementById("imageModal").classList.remove("show");
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("imageModal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
     </script>
+
 </body>
 
 </html>
