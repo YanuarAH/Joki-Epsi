@@ -1495,8 +1495,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url('/assets/images/GA-bg.png') no-repeat center center;
+  background: url('/assets/images/GA-bg.png') no-repeat center top;
   background-size: cover;
+  background-position: center calc(-250px); /* Naikkan posisi bg 20px ke atas */
   border-radius: 16px;
   padding: 1.5rem 2rem;
   box-shadow: var(--shadow-lg);
@@ -1530,11 +1531,13 @@ body {
   color: #fff;
 }
 
+
 .giveaway-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0 0 0.25rem 0;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: red;
 }
 
 .giveaway-subtitle {
@@ -1542,6 +1545,7 @@ body {
   margin: 0;
   opacity: 0.9;
   font-weight: 500;
+    color: red;
 }
 
 .giveaway-action {
