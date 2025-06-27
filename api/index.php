@@ -102,7 +102,7 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
                         <div id="imageModal" class="modal">
                             <div class="modal-content">
                                 <span class="close" onclick="closeModal()">&times;</span>
-                                <img src="/assets/images/ga-detail.jpeg" alt="Giveaway Detail" class="modal-image">
+                                <img src="/assets/images/Detail-GA.jpg" alt="Giveaway Detail" class="modal-image">
                             </div>
                         </div>
                     </div>
