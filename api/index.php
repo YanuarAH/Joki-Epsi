@@ -23,6 +23,7 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
             <div class="container">
                 <div class="carousel-container">
                     <div class="carousel-wrapper">
+                        <!-- Carousel Slides -->
                         <div class="carousel-slide active">
                             <div class="carousel-content">
                                 <h2 class="carousel-title">Selamat Datang di Joki Epsi</h2>
@@ -89,18 +90,21 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
             </div>
         </section>
 
-
         <!-- Giveaway Support Section -->
         <section class="giveaway-section">
             <div class="container">
                 <div class="giveaway-banner">
                     <div class="giveaway-content">
-                        <!-- <div class="giveaway-label">GIVEAWAY</div> -->
+                        <!-- Tombol buka popup -->
+                        <button class="btn-detail" onclick="openModal()">Lihat Detail</button>
 
-                        <!-- <div class="giveaway-text">
-                            <h3 class="giveaway-title">Ikuti Giveaway Kami</h3>
-                            <p class="giveaway-subtitle">Dapatkan hadiah menarik setiap minggu</p>
-                        </div> -->
+                        <!-- Popup modal -->
+                        <div id="imageModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <img src="/assets/images/ga-detail.jpeg" alt="Giveaway Detail" class="modal-image">
+                            </div>
+                        </div>
                     </div>
                     <div class="giveaway-action">
                         <a href="https://bit.ly/gachallengegame" target="_blank" class="btn-giveaway">
@@ -114,10 +118,6 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
                 </div>
             </div>
         </section>
-
-
-
-
 
         <!-- Games Grid -->
         <section class="games-section">
@@ -136,10 +136,29 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
                 </div>
             </div>
         </section>
+
     </main>
 
     <?php include dirname(__DIR__) . '/includes/footer.php'; ?>
     <script src="assets/js/script.js"></script>
+
+    <!-- Modal Logic -->
+    <script>
+    function openModal() {
+        document.getElementById("imageModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        const modal = document.getElementById("imageModal");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
 </body>
 
 </html>
