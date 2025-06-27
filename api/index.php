@@ -90,28 +90,28 @@ $page_title = 'Beranda - ' . $site_config['site_name'];
         </section>
 
 
-<!-- Giveaway Support Section -->
-<section class="giveaway-section">
-    <div class="container">
-        <div class="giveaway-banner">
-            <div class="giveaway-content">
-                <div class="giveaway-text">
-                    <h3 class="giveaway-title">Ikuti Giveaway Kami</h3>
-                    <p class="giveaway-subtitle">Dapatkan hadiah menarik setiap minggu</p>
+        <!-- Giveaway Support Section -->
+        <section class="giveaway-section">
+            <div class="container">
+                <div class="giveaway-banner">
+                    <div class="giveaway-content">
+                        <div class="giveaway-text">
+                            <h3 class="giveaway-title">Ikuti Giveaway Kami</h3>
+                            <p class="giveaway-subtitle">Dapatkan hadiah menarik setiap minggu</p>
+                        </div>
+                    </div>
+                    <div class="giveaway-action">
+                        <a href="https://bit.ly/gachallengegame" target="_blank" class="btn-giveaway">
+                            <span class="btn-text">Join Giveaway</span>
+                            <span class="btn-icon">
+                                <img src="/assets/images/giveaway-icon.png" alt="Giveaway Icon" class="giveaway-img-icon">
+                            </span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="giveaway-action">
-                <a href="https://bit.ly/gachallengegame" target="_blank" class="btn-giveaway">
-                    <span class="btn-text">Join Giveaway</span>
-                    <span class="btn-icon">
-                        <img src="/path/to/giveaway-icon.png" alt="Giveaway Icon" class="giveaway-img-icon">
-                    </span>
-                    <span class="btn-arrow">→</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
 

@@ -1495,13 +1495,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(135deg, #a78bfa, #8b5cf6); /* Ungu gradasi */
+  background: url('/assets/images/GA-bg.png') no-repeat center center;
+  background-size: cover;
   border-radius: 16px;
   padding: 1.5rem 2rem;
   box-shadow: var(--shadow-lg);
   position: relative;
   overflow: hidden;
 }
+
 
 .giveaway-banner::before {
   content: "";
