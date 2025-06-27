@@ -1560,6 +1560,25 @@ body {
 }
 
 
+.giveaway-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  text-shadow:
+    -2px -2px 0 yellow,
+     2px -2px 0 yellow,
+    -2px  2px 0 yellow,
+     2px  2px 0 yellow,
+     0px  0px 4px yellow;
+  z-index: 2;
+  pointer-events: none; /* biar ga ganggu tombol */
+}
+
+
 
 .giveaway-action {
   flex-shrink: 0;
