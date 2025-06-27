@@ -1536,7 +1536,7 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0 0 0.25rem 0;
-  color: white;
+  color: black;
   text-shadow:
     -2px -2px 0 red,
      2px -2px 0 red,
@@ -1550,7 +1550,7 @@ body {
   margin: 0;
   opacity: 0.9;
   font-weight: 500;
-  color: white;
+  color: black;
   text-shadow:
     -2px -2px 0 red,
      2px -2px 0 red,
@@ -1558,6 +1558,7 @@ body {
      2px  2px 0 red,
      0px  0px 3px red;
 }
+
 
 
 .giveaway-action {
@@ -1679,9 +1680,9 @@ body {
 
 @media (max-width: 480px) {
   .giveaway-banner {
-    padding: 0.875rem 1rem;
-    gap: 0.5rem;
-    background-position: center calc(-200px);
+ background: url('/assets/images/Mobile-GA.png') no-repeat center top;
+    background-size: cover;
+    background-position: center calc(0px);
 
   }
 
